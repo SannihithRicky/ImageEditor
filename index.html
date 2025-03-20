@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Navbar -->
+        <nav>
+            <h1>Image Editor</h1>
+        </nav>
+
+        <!-- File Upload Section -->
+        <div class="file-controls">
+            <label for="fileInput" class="custom-file-upload">Choose a File</label>
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+
+        <!-- Image Preview -->
+        <div class="image-preview">
+            <img id="imagePreview" src="" alt="Image will appear here">
+        </div>
+
+        <!-- Image Controls -->
+        <div class="image-controls">
+            <label>Brightness:</label>
+            <input type="range" id="brightness" min="0" max="200" value="100">
+            
+            <label>Contrast:</label>
+            <input type="range" id="contrast" min="0" max="200" value="100">
+            
+            <label>Saturation:</label>
+            <input type="range" id="saturation" min="0" max="200" value="100">
+            
+            <label>Grayscale:</label>
+            <input type="range" id="grayscale" min="0" max="100" value="0">
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button id="reset">Reset</button>
+            <button id="save">Save</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
